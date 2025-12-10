@@ -3,8 +3,8 @@ import datetime
 import os
 
 # --- Настройки ---
-LAT = os.getenv("LAT", "43.25")          # широта
-LNG = os.getenv("LNG", "76.95")          # долгота
+LAT = os.getenv("LAT", "43.238293")          # широта
+LNG = os.getenv("LNG", "76.945465")          # долгота
 TG_TOKEN = os.getenv("TG_TOKEN")         # токен бота
 TG_CHAT_ID = os.getenv("TG_CHAT_ID")     # ID чата/юзера
 
