@@ -22,7 +22,7 @@ def get_prayer_times():
 
     # ищем объект с датой = сегодня
     for day in result:
-        if day.get("date") == today:
+        if day.get("Date") == today:
             return day
 
     return None
