@@ -50,6 +50,7 @@ if __name__ == "__main__":
         text = (
             f"<b>Расписание намаза на {today}</b>\n\n"
             f"Fajr: {prayer['fajr']}\n"
+            f"Окончание фаджра (восход): {prayer['sunrise']}\n\n"
             f"Dhuhr: {prayer['dhuhr']}\n"
             f"Asr: {prayer['asr']}\n"
             f"Maghrib: {prayer['maghrib']}\n"
