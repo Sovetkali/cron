@@ -42,7 +42,11 @@ def send_telegram(text: str):
 
 
 if __name__ == "__main__":
-    today_prayer, tomorrow_prayer = get_prayer_times()
+    try:
+        today_prayer, tomorrow_prayer = get_prayer_times()
+    except Exception as e:
+        text = f'Произошла ошибка: {e}'
+        send_telegram(text)
 
     if not today_prayer:
         text = f"Нет данных на {today}"
